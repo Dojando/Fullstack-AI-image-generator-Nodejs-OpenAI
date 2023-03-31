@@ -17,6 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/create', async (req, res) => {
+  try {
     const prompt = req.body.prompt;
 
     const aiResponse = await openai.createImage({
@@ -27,6 +28,10 @@ app.post('/create', async (req, res) => {
 
     const image = aiResponse.data.data[0].url;
     res.send({ image });
+  } catch (error) {
+    console.error(error)
+    res.status(500).send(error?.response.data.error.message || 'Une erreur s\'est produite');
+  }
 });
 
 app.listen(8080, () => console.log('http://localhost:8080/create'));
