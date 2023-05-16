@@ -7,7 +7,7 @@ form.addEventListener('submit', async (e) => {
   showSpinner();
   const data = new FormData(form);
 
-  const response = await fetch('http://localhost:8080/create', {
+  const response = await fetch('https://fullstack-ai-image-generator-open-ai.onrender.com/create', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
