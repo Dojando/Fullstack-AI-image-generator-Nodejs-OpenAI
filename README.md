@@ -1,12 +1,19 @@
-## Fullstack AI image generator [JS, Nodejs, OpenAI API]
+## À propos du projet
 
-Le projet est un site générant une image à partir d'une description utilisteur via l'api DALL-E d'OpenAI.
+Site de génération d'images par intelligence artificielle permettant de créer des images à partir de descriptions textuelles grâce à l'API DALL-E d'OpenAI.
 
-Lien vers le site : https://fullstack-ai-image-generator-nodejs-open-ai.vercel.app/
+### Réalisé avec :
+- Javascript
+- NodeJS
+- OpenAI API
 
-Les concepts vus et implémentés dans ce projet :
-* Mise en place d'un serveur avec NodeJS et Express
-* RESTful API
-* Connexion à une API via une clé privée
+Visitez le site : [Lien du site](https://fullstack-ai-image-generator-nodejs-open-ai.vercel.app/)
+
+Les concepts vus et implémentés à travers ce projet :
+* Mise en place d'un serveur avec NodeJS et Express et création d’une API RESTful
 * Interface Frontend Text-to-Image
-* Gestion des erreurs
+* Connexion à l’API de OpenAI via une clé privée / Gestion des erreurs
+
+## Captures d'écran du site
+### Page de création d'image
+![p4_page_ai](https://github.com/Dojando/Fullstack-AI-image-generator-Nodejs-OpenAI/assets/50966415/dfd41a18-5743-449c-a97a-2eafb0e6950a)
